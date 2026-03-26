@@ -58,24 +58,23 @@
         <!-- Contenedor del main -->
 
         <!-- Columna del patito -->
-        <div class="container-fluid text-center p-4">
+        <section class="container-fluid text-center p-4">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
+                
+                <article class="col-12 col-md-6 col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img src="./assets/img/pato-de-goma.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Tu compañero fiel de codigo</p>
                         </div>
                     </div>
-
-                    <!-- Fin de columna del patito -->
-
-                </div>
+                </article>
+                <!-- Fin de columna del patito -->
 
 
                 <!-- Inicio de columna acordeon -->
 
-                <div class="col-12 col-md-6 col-lg-4 p-4">
+                <article class="col-12 col-md-6 col-lg-4 p-4">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -122,10 +121,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Fin del acordeon -->
-                </div>
+                    
+                </article>
 
-                <div class="col-12 col-md-6 col-lg-4 ">
+                <!-- Fin del acordeon -->
+                
+                <!-- Barra de porcentajes -->
+                <article class="col-12 col-md-6 col-lg-4 ">
                     <label class="form-label fw-bold">Progreso HTML</label>
                     <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
                         aria-valuemin="0" aria-valuemax="100">
@@ -139,46 +141,39 @@
                     <label class="form-label fw-bold">Progreso JS</label>
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar text-bg-warning" style="width: 1%">1%</div>
+                        <div class="progress-bar text-bg-warning" style="width: 5%">5%</div>
                     </div>
                     <label class="form-label fw-bold">Progreso Python</label>
                     <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
                         aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar text-bg-danger" style="width: 0%">0%</div>
+                        <div class="progress-bar text-bg-danger" style="width: 5%">5%</div>
                     </div>
 
                     <button class="btn btn-primary mt-2" type="button" disabled>
                         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                         <span role="status">Actualizando</span>
                     </button>
-
-
-
-                </div>
-
-
-            </div>
+                </article>
+                <!-- Fin de barras de porcentajes -->
 
             <hr class="mt-4 mb-3 border-secondary">
+        
+        </section>
 
-
-
-        </div>
-
-        <div class="container-fluid mt-5">
+        <section class="container-fluid mt-5 text-center">
             <form class="row g-4">
-                <legend style="text-align: center;">Formulario de contacto</legend>
+                <legend>Formulario de contacto </legend>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <label for="nombre" class="form-label fw-bold">Nombre y Apellidos</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Ana García" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Nombre requerido" required>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <label for="email" class="form-label fw-bold">Correo Electrónico</label>
                     <div class="input-group">
                         <span class="input-group-text">@</span>
-                        <input type="email" class="form-control" id="email" placeholder="nombre@correo.com">
+                        <input type="email" class="form-control" id="email" placeholder="duck@ducky.com">
                     </div>
                 </div>
 
@@ -186,11 +181,9 @@
                     <label for="telefono" class="form-label fw-bold">Teléfono de contacto</label>
                     <div class="input-group">
                         <span class="input-group-text">+34</span>
-                        <input type="tel" class="form-control" id="telefono" placeholder="600 000 000">
+                        <input type="tel" class="form-control" id="telefono" placeholder="123 456 789">
                     </div>
                 </div>
-
-                
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <button type="submit" class="btn btn-primary px-5 shadow-sm"
@@ -200,14 +193,12 @@
                 </div>
 
             </form>
-        </div>
+        </section>
 
-
-
-
-        <!-- Fin del contenedordel main -->
+        <!-- Fin del formulario de contacto -->
 
     </main>
+     <!-- Fin del contenedordel main -->
 
     <footer>
 
@@ -260,9 +251,6 @@
         </footer>
 
     </footer>
-
-
-
 
     <!-- Implementando el script para boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
